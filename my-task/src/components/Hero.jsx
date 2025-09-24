@@ -1,7 +1,7 @@
-import apple from './../../public/apple.png';
-import google from './../../public/google.png';
-import cover from './../../public/Rectangle 161124256.png';
-import Vector from './../../public/Vector.png';
+import apple from "./../../public/apple.png";
+import google from "./../../public/google.png";
+import cover from "./../../public/Rectangle 161124256.png";
+import Vector from "./../../public/Vector.png";
 
 const Hero = () => {
   return (
@@ -28,7 +28,7 @@ const Hero = () => {
           </p>
 
           {/* Buttons */}
-          <div className="mt-6 flex flex-col sm:flex-row  justify-center md:justify-start gap-4 relative z-10">
+          <div className="mt-6 flex flex-col sm:flex-row items-center justify-center md:items-start md:justify-start gap-4 relative z-10">
             <button className="w-40">
               <img src={apple} alt="Download on App Store" />
             </button>

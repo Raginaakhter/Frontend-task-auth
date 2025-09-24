@@ -4,11 +4,11 @@ const Postsection3 = () => {
     return (
      <section className="py-12 px-4 bg-white">
           <div className="max-w-5xl m-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Build for Everyone</h1>
+            {/* <h1 className="text-4xl md:text-5xl font-bold mb-4">Build for Everyone</h1>
             <p className="text-gray-600 mb-10">
               Whether you are booking services, managing tasks, or running operations, <br className="hidden md:block" />
               we have designed the perfect experience for you.
-            </p>
+            </p> */}
     
             <div className="flex flex-col md:flex-row items-center justify-center ">
               {/* Left Content */}

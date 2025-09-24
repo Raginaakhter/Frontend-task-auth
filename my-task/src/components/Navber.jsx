@@ -1,12 +1,26 @@
+import logo from './../../public/logo (2).png';
 
-import logo from './../../public/logo (2).png'
-const Navber = () => {
-    return (
-        <div className='flex justify-between mt-1 mr-1 ml-2'>
-            <img src={logo}alt="" />
-           <button className="btn btn-active btn-success text-shadow-warning text-white **:">Get started</button>
+const Navbar = () => {
+  return (
+    <nav className="bg-white shadow-md">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          
+          {/* Logo */}
+          <div className="flex-shrink-0">
+            <img src={logo} alt="Logo" className="h-10 w-auto" />
+          </div>
+
+          {/* Button */}
+          <div>
+            <button className="bg-green-600 hover:bg-green-700 text-white font-semibold px-4 py-2 rounded-lg transition">
+              Get Started
+            </button>
+          </div>
         </div>
-    );
+      </div>
+    </nav>
+  );
 };
 
-export default Navber;
+export default Navbar;
