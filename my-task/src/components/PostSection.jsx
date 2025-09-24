@@ -45,7 +45,7 @@ const PostSection = () => {
           {/* Right Image */}
           <div className="md:w-1/2 flex justify-center">
             <img
-              src={mobile1}
+              src={mobile3}
               alt="Mobile App Preview"
               className="w-full max-w-sm md:max-w-md lg:max-w-lg"
             />
