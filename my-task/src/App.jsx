@@ -4,6 +4,7 @@ import CardSection from './components/CardSection'
 import Hero from './components/Hero'
 import Navber from './components/Navber'
 import PostSection from './components/PostSection'
+import Postsection2 from './components/Postsection2'
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
    <Hero></Hero>
    <CardSection></CardSection>
    <PostSection></PostSection>
+   <Postsection2></Postsection2>
     </>
   )
 }
