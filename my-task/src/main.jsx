@@ -3,10 +3,12 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from './App';
 import RegisterForm from "./Authentation/RegisterForm";
-
+import EmailVerificationPage from "./Authentation/EmailVerificationPage";
 import Login from './Authentation/Login';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./components/Root";
+import ForgotPassword from "./Authentation/ForgotPassword";
+import EmailVerification from "./Authentation/EmailVerification";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,18 @@ const router = createBrowserRouter([
           {
         path: "/register",
         element:<RegisterForm></RegisterForm>,
+      },
+            {
+        path: "/password",
+       element:<ForgotPassword></ForgotPassword>
+      },
+              {
+        path: "/emailverification",
+       element:<EmailVerification></EmailVerification>
+      },
+       {
+        path: "/emailverificationpage",
+       element:<EmailVerificationPage></EmailVerificationPage>
       },
     ],
   },

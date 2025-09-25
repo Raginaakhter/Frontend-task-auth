@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router';
 
 const RegisterForm = () => {
   const [formData, setFormData] = useState({
@@ -143,12 +144,12 @@ const RegisterForm = () => {
           </div>
 
           {/* Create Account Button */}
-          <button
+         <Link to="/"> <button
             type="submit"
             className="w-full py-3 px-4 bg-green-600 text-white font-bold rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500"
           >
             Create Account
-          </button>
+          </button></Link>
         </form>
 
         {/* OR separator */}

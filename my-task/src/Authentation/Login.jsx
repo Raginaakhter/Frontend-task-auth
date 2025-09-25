@@ -80,7 +80,7 @@ const LoginPage = () => {
                                 Remember me
                             </label>
                         </div>
-                        <a href="#" className="text-green-600 hover:underline">
+                        <a href="/password" className="text-green-600 hover:underline">
                             Forgot password?
                         </a>
                     </div>
