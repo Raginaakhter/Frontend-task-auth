@@ -9,6 +9,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./components/Root";
 import ForgotPassword from "./Authentation/ForgotPassword";
 import EmailVerification from "./Authentation/EmailVerification";
+import AccountSuccessPage from "./Authentation/AccountSuccessPage";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
        {
         path: "/emailverificationpage",
        element:<EmailVerificationPage></EmailVerificationPage>
+      },
+       {
+        path: "/success",
+       element:<AccountSuccessPage></AccountSuccessPage>
       },
     ],
   },
