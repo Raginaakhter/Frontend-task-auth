@@ -40,9 +40,9 @@ const LoginPage = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm">
+      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm mt-7 mb-7">
         <h2 className="text-2xl font-bold text-center mb-2">Welcome to ScapeSync</h2>
-        <p className="text-gray-600 text-center mb-6 text-sm">
+        <p className="text-gray-600 text-center mb-6   text-sm">
           Please share your login details so you can access the website.
         </p>
 

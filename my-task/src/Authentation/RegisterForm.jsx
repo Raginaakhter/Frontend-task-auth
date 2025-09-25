@@ -61,8 +61,8 @@ const RegisterForm = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
-      <div className="bg-white p-8 rounded-lg shadow-xl w-full max-w-md">
+    <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4 ">
+      <div className="bg-white p-8 rounded-lg shadow-xl w-full max-w-md ">
         <h2 className="text-3xl font-bold text-center mb-2">Create your Account</h2>
         <p className="text-gray-600 text-center mb-6">When sports Meets smart Tech.</p>
 
