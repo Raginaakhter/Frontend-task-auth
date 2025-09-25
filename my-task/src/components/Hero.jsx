@@ -14,13 +14,15 @@ const Hero = () => {
           <img
             src={Vector}
             alt="Background Vector"
-            className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none z-0"
+            className="absolute top-0 left-0 w-full h-full  pointer-events-none z-0"
           />
           
           {/* Heading */}
-          <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+         <div>
+           <h1  className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
             All Your Jobs <br /> One Smart App
           </h1>
+         </div>
 
           <p className="mt-4 relative z-10 text-gray-600 text-base sm:text-lg">
             Built for business owners, employees, and clients to streamline job 
