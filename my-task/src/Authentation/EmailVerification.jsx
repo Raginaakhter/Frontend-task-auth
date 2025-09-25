@@ -75,7 +75,7 @@ const EmailVerification = () => {
             Continue
           </button>
         </form>
-
+{/* <h1>hi</h1> */}
         <div className="mt-6 text-sm">
           <p className="text-gray-700">
             Didn't receive the code?{' '}
