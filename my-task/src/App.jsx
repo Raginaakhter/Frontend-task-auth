@@ -1,6 +1,6 @@
 
 
-import { Outlet } from 'react-router'
+
 import Comment from './Comment'
 import AskQues from './components/AskQues'
 import CardSection from './components/CardSection'

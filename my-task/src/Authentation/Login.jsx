@@ -26,7 +26,7 @@ const LoginPage = () => {
       localStorage.setItem('token', response.data.token);
 
       alert('Login successful!');
-      // redirect to dashboard/home.....
+      // redirect to dashboard/home...............................
       window.location.href = '/dashboard';
     } catch (error) {
       console.error('Login error:', error.response?.data || error.message);
