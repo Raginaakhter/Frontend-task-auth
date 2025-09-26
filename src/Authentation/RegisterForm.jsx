@@ -178,11 +178,12 @@ const RegisterForm = () => {
                   setShowConfirmPassword(!showConfirmPassword)
                 }
               >
-               {showConfirmPassword ? (
+               {/* {showConfirmPassword ? (
                   <img src={eye2} alt="" />
                 ) : (
                   <img src={eye} alt="" />
-                )}  {showConfirmPassword ? <img src={eye2} alt="" /> : <img src={eye} alt="" />}
+                )}   */}
+                {showConfirmPassword ? <img src={eye2} alt="" /> : <img src={eye} alt="" />}
               </span>
             </div>
           </div>
