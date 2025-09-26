@@ -131,7 +131,7 @@ const LoginPage = () => {
             Login with Google
           </button>
         </button>
-
+{/* .............................................................. */}
         {/* Signup link */}
         <div className="mt-6 text-center text-sm">
           <p className="text-gray-700">
