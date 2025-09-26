@@ -197,22 +197,30 @@ const RegisterForm = () => {
               onChange={handleChange}
               className="h-4 w-4 text-green-600 border-gray-300 rounded focus:ring-green-500"
             />
-            <label htmlFor="agreeToTerms" className="ml-2 block text-sm text-gray-900">
-              I agree to Tech Takes{' '}
-              <a href="#" className="text-green-600 hover:underline">Terms of Service</a> and{' '}
-              <a href="#" className="text-green-600 hover:underline">Privacy Policy</a>.
+             <label
+              htmlFor="agreeToTerms"
+              className="ml-2 block text-sm text-gray-900"
+            >
+              I agree to Tech Takes{" "}
+              <a href="#" className="text-green-600 hover:underline">
+                Terms of Service
+              </a>{" "}
+              and{" "}
+              <a href="#" className="text-green-600 hover:underline">
+                Privacy Policy
+              </a>
+              
             </label>
           </div>
 
           {/* Create Account Button */}
-          <Link to="/success">
-            <button
+           <button
               type="submit"
               className="w-full py-3 px-4 bg-green-600 text-white font-bold rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500"
             >
               Create Account
             </button>
-          </Link>
+       
         </form>
 
         {/* OR separator */}
