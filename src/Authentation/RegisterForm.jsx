@@ -82,7 +82,13 @@ const RegisterForm = () => {
           {/* First Name & Last Name */}
           <div className="flex gap-4 mb-4">
             <div className="w-1/2">
-              <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">First Name</label>
+              {/* <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">First Name</label> */}
+                 <label
+                htmlFor="firstName"
+                className="block text-sm font-medium text-gray-700"
+              >
+                First Name
+              </label>
               <input
                 type="text"
                 id="firstName"
