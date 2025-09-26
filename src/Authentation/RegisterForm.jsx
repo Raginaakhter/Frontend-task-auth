@@ -174,9 +174,15 @@ const RegisterForm = () => {
               />
               <span
                 className="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-500 cursor-pointer"
-                onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                onClick={() =>
+                  setShowConfirmPassword(!showConfirmPassword)
+                }
               >
-                {showConfirmPassword ? <img src={eye2} alt="" /> : <img src={eye} alt="" />}
+               {showConfirmPassword ? (
+                  <img src={eye2} alt="" />
+                ) : (
+                  <img src={eye} alt="" />
+                )}  {showConfirmPassword ? <img src={eye2} alt="" /> : <img src={eye} alt="" />}
               </span>
             </div>
           </div>
