@@ -32,7 +32,7 @@ const RegisterForm = () => {
     }
 
     try {
-       const form = new FormData();
+      const form = new FormData();
       form.append("first_name", formData.firstName);
       form.append("last_name", formData.lastName);
       form.append("email", formData.email);
@@ -53,7 +53,7 @@ const RegisterForm = () => {
 
       if (response.ok) {
         alert("✅ Registration successful!");
-         console.log("🎉 Register successful");
+        console.log("🎉 Register successful");
       } else {
         alert("❌ " + (data.message || "Registration failed"));
       }
@@ -65,13 +65,13 @@ const RegisterForm = () => {
 
   const handleGoogleSignIn = () => {
     console.log('Continuing with Google...');
-      console.log("Continuing with Google...");
+    console.log("Continuing with Google...");
   };
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4 ">
       <div className="bg-white p-8 rounded-lg shadow-xl w-full max-w-md ">
-       <h2 className="text-3xl font-bold text-center mb-2">
+        <h2 className="text-3xl font-bold text-center mb-2">
           Create your Account
         </h2>
         <p className="text-gray-600 text-center mb-6">
@@ -83,7 +83,7 @@ const RegisterForm = () => {
           <div className="flex gap-4 mb-4">
             <div className="w-1/2">
               {/* <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">First Name</label> */}
-                 <label
+              <label
                 htmlFor="firstName"
                 className="block text-sm font-medium text-gray-700"
               >
@@ -99,7 +99,12 @@ const RegisterForm = () => {
               />
             </div>
             <div className="w-1/2">
-              <label htmlFor="lastName" className="block text-sm font-medium text-gray-700">Last Name</label>
+              <label
+                htmlFor="lastName"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Last Name
+              </label>
               <input
                 type="text"
                 id="lastName"
@@ -113,7 +118,12 @@ const RegisterForm = () => {
 
           {/* Email Address */}
           <div className="mb-4">
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email address</label>
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Email address
+            </label>
             <input
               type="email"
               id="email"
@@ -126,10 +136,15 @@ const RegisterForm = () => {
 
           {/* Password */}
           <div className="mb-4">
-            <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password</label>
+            <label
+              htmlFor="password"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Password
+            </label>
             <div className="relative mt-1">
               <input
-                type={showPassword ? 'text' : 'password'}
+                type={showConfirmPassword ? "text" : "password"}
                 id="password"
                 name="password"
                 value={formData.password}
@@ -140,7 +155,7 @@ const RegisterForm = () => {
                 className="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-500 cursor-pointer"
                 onClick={() => setShowPassword(!showPassword)}
               >
-                {showPassword ? <img src={eye2} alt="" /> :<img src={eye} alt="" /> }
+                {showPassword ? <img src={eye2} alt="" /> : <img src={eye} alt="" />}
               </span>
             </div>
           </div>
@@ -161,7 +176,7 @@ const RegisterForm = () => {
                 className="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-500 cursor-pointer"
                 onClick={() => setShowConfirmPassword(!showConfirmPassword)}
               >
-                {showConfirmPassword ?  <img src={eye2} alt="" /> :<img src={eye} alt="" />}
+                {showConfirmPassword ? <img src={eye2} alt="" /> : <img src={eye} alt="" />}
               </span>
             </div>
           </div>
@@ -184,14 +199,14 @@ const RegisterForm = () => {
           </div>
 
           {/* Create Account Button */}
-         <Link to="/success"> 
-           <button
-            type="submit"
-            className="w-full py-3 px-4 bg-green-600 text-white font-bold rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500"
-          >
-            Create Account
-          </button>
-         </Link>
+          <Link to="/success">
+            <button
+              type="submit"
+              className="w-full py-3 px-4 bg-green-600 text-white font-bold rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500"
+            >
+              Create Account
+            </button>
+          </Link>
         </form>
 
         {/* OR separator */}
@@ -203,7 +218,7 @@ const RegisterForm = () => {
 
         {/* Continue with Google Button */}
         <button
-          onClick={ handleGoogleSignIn }
+          onClick={handleGoogleSignIn}
           className="w-full py-2 border border-gray-300 rounded-md flex items-center justify-center space-x-2 text-gray-700 hover:bg-gray-50"
         >
           <button className="btn bg-white text-black border-[#e5e5e5]">
