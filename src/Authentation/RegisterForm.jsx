@@ -5,11 +5,11 @@ import eye from './../../public/eye.png'
 
 const RegisterForm = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    password: '',
-    confirmPassword: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
     agreeToTerms: false,
   });
   const [showPassword, setShowPassword] = useState(false);
@@ -32,21 +32,28 @@ const RegisterForm = () => {
     }
 
     try {
-      const response = await fetch("https://apitest.softvencefsd.xyz/api/register", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: formData.firstName + " " + formData.lastName,
-          email: formData.email,
-          password: formData.password,
-        }),
-      });
+       const form = new FormData();
+      form.append("first_name", formData.firstName);
+      form.append("last_name", formData.lastName);
+      form.append("email", formData.email);
+      form.append("password", formData.password);
+      form.append("password_confirmation", formData.confirmPassword);
+      form.append("terms", formData.agreeToTerms ? "true" : "false");
+
+      const response = await fetch(
+        "https://apitest.softvencefsd.xyz/api/register",
+        {
+          method: "POST",
+          body: form,
+        }
+      );
 
       const data = await response.json();
       console.log("API Response:", data);
 
       if (response.ok) {
         alert("✅ Registration successful!");
+         console.log("🎉 Register successful");
       } else {
         alert("❌ " + (data.message || "Registration failed"));
       }
@@ -58,13 +65,18 @@ const RegisterForm = () => {
 
   const handleGoogleSignIn = () => {
     console.log('Continuing with Google...');
+      console.log("Continuing with Google...");
   };
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4 ">
       <div className="bg-white p-8 rounded-lg shadow-xl w-full max-w-md ">
-        <h2 className="text-3xl font-bold text-center mb-2">Create your Account</h2>
-        <p className="text-gray-600 text-center mb-6">When sports Meets smart Tech.</p>
+       <h2 className="text-3xl font-bold text-center mb-2">
+          Create your Account
+        </h2>
+        <p className="text-gray-600 text-center mb-6">
+          When sports Meets smart Tech.
+        </p>
 
         <form onSubmit={handleSubmit}>
           {/* First Name & Last Name */}
