@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="bg-green-900 text-white py-10 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         
-        {/* Logo Section */}
+        {/* Logo Section .......*/}
         <div className="flex flex-col items-center md:items-start space-y-4 flex-1">
           <img src={footer} alt="logo" className="h-10" />
           <img  src={footers} alt="footer" className="h-4" />
